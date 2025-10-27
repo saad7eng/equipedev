@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input type="number" id="nb1" />
+    <input type="number" id="nb2" />
+    <div id="dv"></div>
+    <button onclick="calculerSomme()()">Callculer Somme</button>
+    <button onclick="calculerDiv()">Callculer Division</button>
+    <script>
+      function calculerSomme() {
+        let nb1 = document.getElementById("nb1").value;
+        let nb2 = document.getElementById("nb2").value;
+
+        let somme = parseInt(nb1) + parseInt(nb2);
+
+        let div = document.getElementById("dv");
+        div.innerHTML = "";
+        div.innerHTML += somme;
+      }
+      function calculerDiv() {
+        let nb1 = document.getElementById("nb1").value;
+        let nb2 = document.getElementById("nb2").value;
+
+        let divsion = parseInt(nb1) / parseInt(nb2);
+
+        let div = document.getElementById("dv");
+        div.innerHTML = "";
+        div.innerHTML += divsion;
+      }
+    </script>
+  </body>
+</html>
